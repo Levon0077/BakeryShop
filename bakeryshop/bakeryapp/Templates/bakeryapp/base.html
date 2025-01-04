@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+            Base
+        {% endblock %}
+    </title>
+
+</head>
+<body>
+
+    {% block body %}
+       <h1>Hello Dear Visitor!</h1>
+    {% endblock %}
+</body>
+
+    <div>
+        {% now 'H:i' %}
+    </div>
+
+    <div>
+        {% now 'l' as weekday %}
+        Today is {{ weekday }}
+    </div>
+</html>
