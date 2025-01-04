@@ -3,4 +3,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def shop_index(request: HttpRequest) -> HttpResponse:
-    return HttpResponse('Hello dear visitor!')
+    return render(request, 'bakeryapp/index.html')
